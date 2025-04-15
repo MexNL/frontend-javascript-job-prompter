@@ -88,13 +88,65 @@ const departments = {
 //Opdracht 2a
 const userInput = prompt("Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service] ?");
 
-//opdracht 2b
+//opdracht 2b/2c
 if (userInput === "marketing") {
-    prompt("Je koos " + userInput + " " + departments.marketing.description)
+    const jobInput = prompt(
+        "Je koos "+ userInput + " . Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n" +
+        "0: " + departments.marketing.jobs[0].title + "\n" +
+        "1: " + departments.marketing.jobs[1].title + "\n" +
+        "2: " + departments.marketing.jobs[2].title + "\n" +
+        "3: " + departments.marketing.jobs[3].title
+    );
+    if (jobInput === "0") {
+        prompt("Je koos " + departments.marketing.jobs[0].title + " een uitdagende rol! " + departments.marketing.jobs[0].description);
+    } else if (jobInput === "1") {
+        prompt("Je koos " + departments.marketing.jobs[1].title + " een uitdagende rol! " + departments.marketing.jobs[1].description);
+    } else if (jobInput === "2") {
+        prompt("Je koos " + departments.marketing.jobs[2].title + " een uitdagende rol! " + departments.marketing.jobs[2].description);
+    } else if (jobInput === "3") {
+        prompt("Je koos " + departments.marketing.jobs[3].title + " een uitdagende rol! " + departments.marketing.jobs[3].description);
+    } else {
+        prompt("Verkeerde input");
+    }
 } else if (userInput === "sales") {
-    prompt("Je koos " + userInput + " " + departments.sales.description)
+    const jobInput = prompt(
+        "Je koos "+ userInput + " . Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n" +
+        "0: " + departments.sales.jobs[0].title + "\n" +
+        "1: " + departments.sales.jobs[1].title + "\n" +
+        "2: " + departments.sales.jobs[2].title + "\n" +
+        "3: " + departments.sales.jobs[3].title
+    );
+    if (jobInput === "0") {
+        prompt("Je koos " + departments.sales.jobs[0].title + " een uitdagende rol! " + departments.sales.jobs[0].description);
+    } else if (jobInput === "1") {
+        prompt("Je koos " + departments.sales.jobs[1].title + " een uitdagende rol! " + departments.sales.jobs[1].description);
+    } else if (jobInput === "2") {
+        prompt("Je koos " + departments.sales.jobs[2].title + " een uitdagende rol! " + departments.sales.jobs[2].description);
+    } else if (jobInput === "3") {
+        prompt("Je koos " + departments.sales.jobs[3].title + " een uitdagende rol! " + departments.sales.jobs[3].description);
+    } else {
+        prompt("Verkeerde input");
+    }
 } else if (userInput === "customer-service") {
-    prompt("Je koos " + userInput + " " + departments["customer-service"].description);
+    const jobInput = prompt(
+        "Je koos "+ userInput + " . Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n" +
+        "0: " + departments["customer-service"].jobs[0].title + "\n" +
+        "1: " + departments["customer-service"].jobs[1].title + "\n" +
+        "2: " + departments["customer-service"].jobs[2].title + "\n" +
+        "3: " + departments["customer-service"].jobs[3].title
+    );
+    if (jobInput === "0") {
+        prompt("Je koos " + departments["customer-service"].jobs[0].title + " een uitdagende rol! " + departments["customer-service"].jobs[0].description);
+    } else if (jobInput === "1") {
+        prompt("Je koos " + departments["customer-service"].jobs[1].title + " een uitdagende rol! " + departments["customer-service"].jobs[1].description);
+    } else if (jobInput === "2") {
+        prompt("Je koos " + departments["customer-service"].jobs[2].title + " een uitdagende rol! " + departments["customer-service"].jobs[2].description);
+    } else if (jobInput === "3") {
+        prompt("Je koos " + departments["customer-service"].jobs[3].title + " een uitdagende rol! " + departments["customer-service"].jobs[3].description);
+    } else {
+        prompt("Verkeerde input");
+    }
 } else {
     prompt("Geen geldige keuze");
 }
+
